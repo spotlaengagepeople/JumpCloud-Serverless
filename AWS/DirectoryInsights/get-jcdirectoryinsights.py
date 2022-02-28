@@ -36,7 +36,8 @@ def jc_directoryinsights(event, context):
     start_date = start_dt.isoformat("T") + "Z"
     end_date = now.isoformat("T") + "Z"
 
-    outfileName = "jc_directoryinsights_" + start_date + "_" + end_date + ".json.gz"
+  #  outfileName = "jc_directoryinsights_" + start_date + "_" + end_date + ".json.gz"
+    outfileName = "jc_directoryinsights_" + start_date + "_" + end_date + ".json"
     availableServices = ['directory','radius','sso','systems','ldap','mdm','all']
     serviceList = ((service.replace(" ", "")).lower()).split(",")
     for service in serviceList:
